@@ -325,6 +325,7 @@ body {
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .contato-info {
@@ -538,6 +539,36 @@ footer {
     .servicos-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contato-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .contato-info {
+        order: 2;
+    }
+
+    .contato-form {
+        order: 1;
+    }
+
+    .contato {
+        padding: 3rem 1rem;
+    }
+
+    .contato h2 {
+        margin-bottom: 2rem;
+    }
+
+    .whatsapp-button {
+        margin: 1rem 0;
+    }
+
+    .contato-mensagem {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -582,6 +613,26 @@ footer {
 
     .servico-card p {
         font-size: 1rem;
+    }
+
+    .contato {
+        padding: 2rem 1rem;
+    }
+
+    .contato-form input,
+    .contato-form textarea,
+    .contato-form select {
+        padding: 0.8rem;
+        font-size: 16px; /* Previne zoom em iOS */
+    }
+
+    .contato-form textarea {
+        height: 120px;
+    }
+
+    .submit-button {
+        padding: 0.8rem;
+        font-size: 16px;
     }
 }
 
